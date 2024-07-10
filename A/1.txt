@@ -1,0 +1,88 @@
+lfuchs@Levi:~$ nano erstelleVorlagen.sh
+lfuchs@Levi:~$ bash erstelleVorlagen.sh
+Erstelle Datei: klasse.txt
+Erstelle Datei: verwandtschaft.txt
+Erstelle Datei: gemischt.txt
+Dateien wurden erfolgreich erstellt und im Template-Verzeichnis abgelegt.
+lfuchs@Levi:~$ nano verteileDateien.sh
+lfuchs@Levi:~$ bash verteileDateien.sh
+Datei 'klasse.txt' wurde nach 'Klassenverzeichnis' kopiert.
+Datei 'verwandtschaft.txt' wurde nach 'Klassenverzeichnis' kopiert.
+Datei 'gemischt.txt' wurde nach 'Klassenverzeichnis' kopiert.
+Alle Dateien wurden erfolgreich ins Klassenverzeichnis kopiert.
+lfuchs@Levi:~$ nano v
+lfuchs@Levi:~$ nano verteileDateien.sh
+lfuchs@Levi:~$ bash verteileDateien.sh
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Levin' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Levin' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Levin' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Noah' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Noah' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Noah' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Luca' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Luca' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Luca' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Yannik' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Yannik' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Yannik' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Albara' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Albara' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Albara' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Amir' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Amir' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Amir' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Rana' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Rana' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Rana' kopiert.
+Alle Dateien wurden erfolgreich in die Lernendenverzeichnisse kopiert.
+lfuchs@Levi:~$ nano verteileDateien.sh
+lfuchs@Levi:~$ nano
+lfuchs@Levi:~$ nano verteileDateien.sh
+lfuchs@Levi:~$ bash verteileDateien.sh
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Levin' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Levin' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Levin' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Noah' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Noah' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Noah' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Luca' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Luca' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Luca' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Yannik' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Yannik' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Yannik' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Albara' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Albara' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Albara' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Amir' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Amir' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Amir' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Rana' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Rana' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Rana' kopiert.
+Alle Dateien wurden erfolgreich in die Lernendenverzeichnisse kopiert.
+lfuchs@Levi:~$ nano verteileDateien.sh
+lfuchs@Levi:~$ bash verteileDateien.sh
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Levin' in 'Klasse1' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Levin' in 'Klasse1' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Levin' in 'Klasse1' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Noah' in 'Klasse1' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Noah' in 'Klasse1' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Noah' in 'Klasse1' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Luca' in 'Klasse1' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Luca' in 'Klasse1' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Luca' in 'Klasse1' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Yannik' in 'Klasse2' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Yannik' in 'Klasse2' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Yannik' in 'Klasse2' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Albara' in 'Klasse2' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Albara' in 'Klasse2' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Albara' in 'Klasse2' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Amir' in 'Klasse3' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Amir' in 'Klasse3' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Amir' in 'Klasse3' kopiert.
+Datei 'klasse.txt' wurde in das Verzeichnis von 'Rana' in 'Klasse3' kopiert.
+Datei 'verwandtschaft.txt' wurde in das Verzeichnis von 'Rana' in 'Klasse3' kopiert.
+Datei 'gemischt.txt' wurde in das Verzeichnis von 'Rana' in 'Klasse3' kopiert.
+Alle Dateien wurden erfolgreich in die Klassen- und Lernendenverzeichnisse kopiert.
+lfuchs@Levi:~$
