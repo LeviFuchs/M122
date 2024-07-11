@@ -42,21 +42,30 @@ echo "Weather data: $weather_data" >> "$log_file"
 weather_temp=$(echo "$weather_data" | jq -r '.current_weather.temperature')
 weather_wind_speed=$(echo "$weather_data" | jq -r '.current_weather.windspeed')
 
-# Sportergebnisse abrufen (Beispiel-API für Fußball-Ergebnisse)
-sports_api="https://api.football-data.org/v4/matches?status=FINISHED"
-sports_data=$(curl -s -H "X-Auth-Token: YOUR_API_KEY" "$sports_api")
-echo "Sports data: $sports_data" >> "$log_file"
-match=$(echo "$sports_data" | jq -r '.matches[0]')
-home_team=$(echo "$match" | jq -r '.homeTeam.name')
-away_team=$(echo "$match" | jq -r '.awayTeam.name')
-home_score=$(echo "$match" | jq -r '.score.fullTime.home')
-away_score=$(echo "$match" | jq -r '.score.fullTime.away')
+# Coindesk API
+coindesk_api="https://api.coindesk.com/v1/bpi/currentprice.json"
+coindesk_data=$(curl -s "$coindesk_api")
+echo "Coindesk data: $coindesk_data" >> "$log_file"
+btc_price_coindesk=$(echo "$coindesk_data" | jq -r '.bpi.USD.rate')
 
-# Aktuelle Nachrichten abrufen
-news_api="https://newsapi.org/v2/top-headlines?country=de&apiKey=YOUR_API_KEY"
-news_data=$(curl -s "$news_api")
-echo "News data: $news_data" >> "$log_file"
-headline=$(echo "$news_data" | jq -r '.articles[0].title')
+# Coinmap API
+coinmap_api="https://coinmap.org/api/v1/coins/"
+coinmap_data=$(curl -s "$coinmap_api")
+echo "Coinmap data: $coinmap_data" >> "$log_file"
+coinmap_coins=$(echo "$coinmap_data" | jq -r '.coins[0].name')
+
+# Gemini API
+gemini_api="https://api.gemini.com/v2/ticker/btcusd"
+gemini_data=$(curl -s "$gemini_api")
+echo "Gemini data: $gemini_data" >> "$log_file"
+btc_price_gemini=$(echo "$gemini_data" | jq -r '.ask')
+
+# Joke API
+joke_api="https://official-joke-api.appspot.com/jokes/random"
+joke_data=$(curl -s "$joke_api")
+echo "Joke data: $joke_data" >> "$log_file"
+joke_setup=$(echo "$joke_data" | jq -r '.setup')
+joke_punchline=$(echo "$joke_data" | jq -r '.punchline')
 
 # HTML-Datei erstellen
 cat <<EOF > "$html_file"
@@ -83,24 +92,26 @@ cat <<EOF > "$html_file"
     <h2 style="text-align: center;">Krypto-Währungen (USD)</h2>
     <table>
         <tr><th>Krypto</th><th>Preis</th></tr>
-        <tr><td>Bitcoin (BTC)</td><td>$btc_price</td></tr>
+        <tr><td>Bitcoin (BTC, CoinGecko)</td><td>$btc_price</td></tr>
         <tr><td>Ethereum (ETH)</td><td>$eth_price</td></tr>
         <tr><td>Litecoin (LTC)</td><td>$ltc_price</td></tr>
+        <tr><td>Bitcoin (BTC, Coindesk)</td><td>$btc_price_coindesk</td></tr>
+        <tr><td>Bitcoin (BTC, Gemini)</td><td>$btc_price_gemini</td></tr>
     </table>
     <h2 style="text-align: center;">Wetterdaten (Berlin)</h2>
     <table>
         <tr><th>Temperatur (°C)</th><th>Windgeschwindigkeit (km/h)</th></tr>
         <tr><td>$weather_temp</td><td>$weather_wind_speed</td></tr>
     </table>
-    <h2 style="text-align: center;">Letztes Fußballergebnis</h2>
+    <h2 style="text-align: center;">Coinmap Daten</h2>
     <table>
-        <tr><th>Heimmannschaft</th><th>Gastmannschaft</th><th>Ergebnis</th></tr>
-        <tr><td>$home_team</td><td>$away_team</td><td>$home_score : $away_score</td></tr>
+        <tr><th>Erster Coin</th></tr>
+        <tr><td>$coinmap_coins</td></tr>
     </table>
-    <h2 style="text-align: center;">Aktuelle Schlagzeile</h2>
+    <h2 style="text-align: center;">Zufälliger Witz</h2>
     <table>
-        <tr><th>Schlagzeile</th></tr>
-        <tr><td>$headline</td></tr>
+        <tr><th>Setup</th><th>Punchline</th></tr>
+        <tr><td>$joke_setup</td><td>$joke_punchline</td></tr>
     </table>
 </body>
 </html>

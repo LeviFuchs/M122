@@ -154,4 +154,13 @@ local: data_output/index.html remote: index.html
 226 Transfer complete
 1591 bytes sent in 00:00 (249.03 KiB/s)
 221 Goodbye.
-lfuchs@Levi:~$
+lfuchs@Levi:~$ curl https://v6.exchangerate-api.com/v6/bb9ddd1855e84ded5fca04e0/latest/CHF | grep USD
+curl https://v6.exchangerate-api.com/v6/bb9ddd1855e84ded5fca04e0/latest/CHF | grep EUR
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  3154    0  3154    0     0  18523      0 --:--:-- --:--:-- --:--:-- 19469
+  "USD":1.1121,
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  3154    0  3154    0     0  21658      0 --:--:-- --:--:-- --:--:-- 21751
+  "EUR":1.0275,
