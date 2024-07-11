@@ -1,0 +1,157 @@
+lfuchs@Levi:~$ nano fetch_data.sh
+lfuchs@Levi:~$ chmod +x fetch_data.sh
+lfuchs@Levi:~$ sudo apt-get install curl jq wkhtmltopdf
+[sudo] password for lfuchs:
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+curl is already the newest version (7.88.1-10+deb12u6).
+jq is already the newest version (1.6-2.1).
+wkhtmltopdf is already the newest version (0.12.6-2+b1).
+0 upgraded, 0 newly installed, 0 to remove and 24 not upgraded.
+lfuchs@Levi:~$ sudo bash fetch_data.sh
+parse error: Invalid numeric literal at line 2, column 0
+parse error: Invalid numeric literal at line 2, column 0
+parse error: Invalid numeric literal at line 2, column 0
+parse error: Invalid numeric literal at line 1, column 23
+parse error: Invalid numeric literal at line 1, column 23
+ftp: Can't lookup `your.ftp.server:ftp': Name or service not known
+Not connected.
+Not connected.
+fetch_data.sh: line 100: mail: command not found
+lfuchs@Levi:~$ nano fetch_data.sh
+lfuchs@Levi:~$ sudo bash fetch_data.sh
+parse error: Invalid numeric literal at line 2, column 0
+parse error: Invalid numeric literal at line 2, column 0
+parse error: Invalid numeric literal at line 2, column 0
+parse error: Invalid numeric literal at line 1, column 23
+parse error: Invalid numeric literal at line 1, column 23
+ftp: Can't lookup `your.ftp.server:ftp': Name or service not known
+Not connected.
+Not connected.
+lfuchs@Levi:~$ nano fetch_data.sh
+lfuchs@Levi:~$ sudo bash fetch_data.sh
+[sudo] password for lfuchs:
+ftp: Can't lookup `your.ftp.server:ftp': Name or service not known
+Not connected.
+Not connected.
+lfuchs@Levi:~$ nano fetch_data.sh
+lfuchs@Levi:~$ nano fetch_data.sh
+lfuchs@Levi:~$ sudo bash fetch_data.sh
+^C
+lfuchs@Levi:~$ sudo bash fetch_data.sh
+parse error: Invalid numeric literal at line 1, column 20
+parse error: Invalid numeric literal at line 1, column 20
+parse error: Invalid numeric literal at line 1, column 20
+Connected to haraldmueller.ch.
+220 ProFTPD Server (ProFTPD) [82.195.251.67]
+331 Password required for schueler
+230 User schueler logged in
+Remote system type is UNIX.
+Using binary mode to transfer files.
+local: data_output/index.html remote: /path/to/remote_directory/index.html
+229 Entering Extended Passive Mode (|||54431|)
+550 /path/to/remote_directory/index.html: No such file or directory
+221 Goodbye.
+fetch_data.sh: line 109: syntax error: unexpected end of file
+lfuchs@Levi:~$ nano fetch_data.sh
+lfuchs@Levi:~$ sudo bash fetch_data.sh
+parse error: Invalid numeric literal at line 1, column 20
+parse error: Invalid numeric literal at line 1, column 20
+parse error: Invalid numeric literal at line 1, column 20
+Connected to haraldmueller.ch.
+220 ProFTPD Server (ProFTPD) [82.195.251.67]
+331 Password required for schueler
+230 User schueler logged in
+Remote system type is UNIX.
+Using binary mode to transfer files.
+550 /www: No such file or directory
+local: data_output/index.html remote: index.html
+229 Entering Extended Passive Mode (|||55351|)
+150 Opening BINARY mode data connection for index.html
+100% |***************************************************************************************************************|  1174        7.66 MiB/s    00:00 ETA
+226 Transfer complete
+1174 bytes sent in 00:00 (196.99 KiB/s)
+221 Goodbye.
+lfuchs@Levi:~$ nano fetch_data.sh
+lfuchs@Levi:~$ sudo bash fetch_data.sh
+Connected to haraldmueller.ch.
+220 ProFTPD Server (ProFTPD) [82.195.251.67]
+331 Password required for schueler
+230 User schueler logged in
+Remote system type is UNIX.
+Using binary mode to transfer files.
+550 /M122-AP22b/Mueller: No such file or directory
+local: data_output/index.html remote: index.html
+229 Entering Extended Passive Mode (|||58638|)
+150 Opening BINARY mode data connection for index.html
+100% |***************************************************************************************************************|  1199       10.68 MiB/s    00:00 ETA
+226 Transfer complete
+1199 bytes sent in 00:00 (201.63 KiB/s)
+221 Goodbye.
+lfuchs@Levi:~$ nano fetch_data.sh
+lfuchs@Levi:~$ sudo bash fetch_data.sh
+Connected to haraldmueller.ch.
+220 ProFTPD Server (ProFTPD) [82.195.251.67]
+331 Password required for schueler
+230 User schueler logged in
+Remote system type is UNIX.
+Using binary mode to transfer files.
+550 /M122-AP22b/Mueller: No such file or directory
+local: data_output/index.html remote: index.html
+229 Entering Extended Passive Mode (|||58416|)
+150 Opening BINARY mode data connection for index.html
+100% |***************************************************************************************************************|  1591       10.91 MiB/s    00:00 ETA
+226 Transfer complete
+1591 bytes sent in 00:00 (169.65 KiB/s)
+221 Goodbye.
+lfuchs@Levi:~$ nano fetch_data.sh
+lfuchs@Levi:~$ crontab -e
+crontab: installing new crontab
+lfuchs@Levi:~$ crontab -l
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+#
+# */5 * * * * /path/to/system_monitor.sh -f
+#
+# 0 * * * * /path/to/depot_value.sh
+#
+# 0 */6 * * * /home/username/scripts/fetch_data.sh
+lfuchs@Levi:~$ nano fetch_data.sh
+lfuchs@Levi:~$ sudo bash fetch_data.sh
+Connected to haraldmueller.ch.
+220 ProFTPD Server (ProFTPD) [82.195.251.67]
+331 Password required for schueler
+230 User schueler logged in
+Remote system type is UNIX.
+Using binary mode to transfer files.
+550 /M122-AP22b/Mueller: No such file or directory
+local: data_output/index.html remote: index.html
+229 Entering Extended Passive Mode (|||63225|)
+150 Opening BINARY mode data connection for index.html
+100% |***************************************************************************************************************|  1591       30.96 MiB/s    00:00 ETA
+226 Transfer complete
+1591 bytes sent in 00:00 (249.03 KiB/s)
+221 Goodbye.
+lfuchs@Levi:~$
