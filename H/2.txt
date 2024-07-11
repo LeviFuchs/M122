@@ -1,0 +1,49 @@
+lfuchs@Levi:~$ nano config.txt
+lfuchs@Levi:~$ nano install_suite.sh
+lfuchs@Levi:~$ chmod +x install_suite.sh
+lfuchs@Levi:~$ ./install_suite.sh
+Installiere git...
+[sudo] password for lfuchs:
+Fehler bei der Installation von git.
+Installiere curl...
+Fehler bei der Installation von curl.
+Installiere wget...
+Fehler bei der Installation von wget.
+Test: git ist NICHT installiert.
+Test: curl ist NICHT installiert.
+Test: wget ist NICHT installiert.
+Installation abgeschlossen.
+lfuchs@Levi:~$ bash install
+install.log       install_suite.sh
+lfuchs@Levi:~$ bash install
+install.log       install_suite.sh
+lfuchs@Levi:~$ bash install_suite.sh
+Installiere git...
+Fehler bei der Installation von git.
+Installiere curl...
+Fehler bei der Installation von curl.
+Installiere wget...
+Fehler bei der Installation von wget.
+Test: git ist NICHT installiert.
+Test: curl ist NICHT installiert.
+Test: wget ist NICHT installiert.
+Installation abgeschlossen.
+lfuchs@Levi:~$ nano install_suite.sh
+lfuchs@Levi:~$ bash c
+calculate_portfolio_value.sh  config.txt
+lfuchs@Levi:~$ bash config.txt
+lfuchs@Levi:~$ nano config.txt
+lfuchs@Levi:~$ nano install_suite.sh
+lfuchs@Levi:~$ chmod +x install_suite.sh
+lfuchs@Levi:~$ sudo ./install_suite.sh
+Installiere git...
+git erfolgreich installiert.
+Installiere curl...
+curl erfolgreich installiert.
+Installiere wget...
+wget erfolgreich installiert.
+Test: git ist installiert.
+Test: curl ist installiert.
+Test: wget ist installiert.
+Installation abgeschlossen.
+lfuchs@Levi:~$

@@ -1,0 +1,104 @@
+lfuchs@Levi:~$ nano depot_value.sh
+lfuchs@Levi:~$ nano initial_values.csv
+lfuchs@Levi:~$ sudo apt-get install jq
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+jq is already the newest version (1.6-2.1).
+0 upgraded, 0 newly installed, 0 to remove and 30 not upgraded.
+lfuchs@Levi:~$ chmod +x depot_value.sh
+lfuchs@Levi:~$ sudo bash de
+deackes.personnalisée@edu.tbz.ch.brf  defraine.agnès@edu.tbz.ch.brf         deme.athéna@edu.tbz.ch.brf            deveril.inès@edu.tbz.ch.brf
+debling.adèle@edu.tbz.ch.brf          dehmel.mariehélène@edu.tbz.ch.brf     dennett.garçon@edu.tbz.ch.brf         dewbury.michèle@edu.tbz.ch.brf
+debruyn.annotés@edu.tbz.ch.brf        delafeld.bérangère@edu.tbz.ch.brf     depot_value.sh                        dezamora.laurélie@edu.tbz.ch.brf
+decarteret.geneviève@edu.tbz.ch.brf   deleek.renée@edu.tbz.ch.brf           desantos.nélie@edu.tbz.ch.brf
+dederick.kévina@edu.tbz.ch.brf        demanche.mylène@edu.tbz.ch.brf        desmond.pélagie@edu.tbz.ch.brf
+lfuchs@Levi:~$ sudo bash de
+deackes.personnalisée@edu.tbz.ch.brf  defraine.agnès@edu.tbz.ch.brf         deme.athéna@edu.tbz.ch.brf            deveril.inès@edu.tbz.ch.brf
+debling.adèle@edu.tbz.ch.brf          dehmel.mariehélène@edu.tbz.ch.brf     dennett.garçon@edu.tbz.ch.brf         dewbury.michèle@edu.tbz.ch.brf
+debruyn.annotés@edu.tbz.ch.brf        delafeld.bérangère@edu.tbz.ch.brf     depot_value.sh                        dezamora.laurélie@edu.tbz.ch.brf
+decarteret.geneviève@edu.tbz.ch.brf   deleek.renée@edu.tbz.ch.brf           desantos.nélie@edu.tbz.ch.brf
+dederick.kévina@edu.tbz.ch.brf        demanche.mylène@edu.tbz.ch.brf        desmond.pélagie@edu.tbz.ch.brf
+lfuchs@Levi:~$ sudo bash depot_value.sh
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+NESN.SW: 15 @  CHF (Initial: 100 CHF)
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+SCMN.SW: 10 @  CHF (Initial: 500 CHF)
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+ABB.SW: 20 @  CHF (Initial: 25 CHF)
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+NOVN.SW: 10 @  CHF (Initial: 90 CHF)
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+BTC: 0.1 @ 1 CHF (Initial: 50000 CHF)
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+USD: 3000 @ { "Information": "The **demo** API key is for demo purposes only. Please claim your free API key at (https://www.alphavantage.co/support/#api-key) to explore our full API offerings. It takes fewer than 20 seconds." } CHF (Initial: 0.9 CHF)
+Total current value:  CHF
+lfuchs@Levi:~$ crontab -e
+crontab: installing new crontab
+lfuchs@Levi:~$ sudo bash depot_value.sh
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+NESN.SW: 15 @  CHF (Initial: 100 CHF)
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+SCMN.SW: 10 @  CHF (Initial: 500 CHF)
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+ABB.SW: 20 @  CHF (Initial: 25 CHF)
+jq: error (at <stdin>:1): null (null) has no keys
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+NOVN.SW: 10 @  CHF (Initial: 90 CHF)
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+BTC: 0.1 @ 1 CHF (Initial: 50000 CHF)
+depot_value.sh: line 67: bc: command not found
+depot_value.sh: line 68: bc: command not found
+USD: 3000 @ { "Information": "The **demo** API key is for demo purposes only. Please claim your free API key at (https://www.alphavantage.co/support/#api-key) to explore our full API offerings. It takes fewer than 20 seconds." } CHF (Initial: 0.9 CHF)
+Total current value:  CHF
+lfuchs@Levi:~$

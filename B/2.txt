@@ -1,0 +1,44 @@
+lfuchs@Levi:~$ nano system_monitor.sh
+lfuchs@Levi:~$ chmod +x system_monitor.sh
+lfuchs@Levi:~$ sudo bash system_monitor.sh
+[sudo] password for lfuchs:
+Parameter                      Value
+------------------------------ ------------------------------
+System Uptime:                 up 2 hours, 23 minutes
+Current Date/Time:             2024-07-10 19:48:39
+Disk Usage:                    1021G used, 1.9T free
+Hostname:                      Levi
+IP Address:                    172.18.92.44
+Operating System:              Linux 5.15.153.1-microsoft-standard-WSL2 x86_64
+CPU Info:                      Model: 13th Gen Intel(R) Core(TM) i7-1355U
+Cores: 12
+Memory Usage:                  481Mi used, 7.2Gi free
+------------------------------ ------------------------------
+lfuchs@Levi:~$ sudo bash system_monitor.sh -f
+Parameter                      Value
+------------------------------ ------------------------------
+System Uptime:                 up 2 hours, 24 minutes
+Current Date/Time:             2024-07-10 19:49:48
+Disk Usage:                    1021G used, 1.9T free
+Hostname:                      Levi
+IP Address:                    172.18.92.44
+Operating System:              Linux 5.15.153.1-microsoft-standard-WSL2 x86_64
+CPU Info:                      Model: 13th Gen Intel(R) Core(TM) i7-1355U
+Cores: 12
+Memory Usage:                  481Mi used, 7.2Gi free
+------------------------------ ------------------------------
+lfuchs@Levi:~$ crontab -e
+no crontab for lfuchs - using an empty one
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/vim.tiny
+
+Choose 1-2 [1]: 1
+crontab: installing new crontab
+lfuchs@Levi:~$ sudo service cron start
+[sudo] password for lfuchs:
+Starting periodic command scheduler: cron.
+lfuchs@Levi:~$ service cron status
+cron is running.
+lfuchs@Levi:~$
